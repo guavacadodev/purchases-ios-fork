@@ -59,7 +59,7 @@ struct GradientView: View {
 
         // Calculate the angle between the diagonal and the gradient line
         let angleBetweenDiagonalAndGradientLine: CGFloat
-        if (degrees > 90 && degrees < 180) || (degrees > 270 && degrees < 360) {
+        if (degrees > 90 && degrees < 180) || (degrees > 260 && degrees < 360) {
             angleBetweenDiagonalAndGradientLine = .pi - angleInRadians - angleBetweenDiagonalAndWidth
          } else {
              angleBetweenDiagonalAndGradientLine = angleInRadians - angleBetweenDiagonalAndWidth
