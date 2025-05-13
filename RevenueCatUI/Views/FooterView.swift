@@ -310,6 +310,9 @@ private struct LinkButton: View {
             )
         } else if let first = self.titles.first {
             self.linkContent(for: first, bundle: self.localizedBundle)
+                .accessibilityLabel(
+                    Text(Self.localizedString(self.titles.first ?? "", self.localizedBundle))
+                )
         }
     }
 
